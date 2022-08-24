@@ -3,10 +3,12 @@ bl_info = {
     "author" : "Claromes",
     "description" : "Fast access to lock/unlock the Camera to View",
     "blender" : (3, 2, 2),
-    "version" : (0, 0, 1),
+    "version" : (0, 0, 2),
     "location" : "View3D",
     "category" : "3D View",
-    "doc_url": "https://github.com/claromes/overlay_lock_camera"
+    "doc_url": "https://github.com/claromes/overlay_lock_camera",
+    "tracker_url": "https://github.com/claromes/overlay_lock_camera/issues"
+
 }
 
 import bpy
