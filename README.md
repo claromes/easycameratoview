@@ -1,3 +1,3 @@
-# Overlay Lock Camera Blender Add-on [WIP]
+# Overlay Un/Lock Camera Blender Add-on [WIP]
 
-Blender Add-on to lock or unlock the camera easily
+Blender add-on to lock or unlock the Camera to View easily

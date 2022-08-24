@@ -1,13 +1,13 @@
 bl_info = {
-    "name" : "Overlay Lock Camera",
+    "name" : "Overlay Un/Lock Camera",
     "author" : "Claromes",
     "description" : "Fast access to lock/unlock the Camera to View",
     "blender" : (3, 2, 2),
     "version" : (0, 0, 2),
     "location" : "View3D",
     "category" : "3D View",
-    "doc_url": "https://github.com/claromes/overlay_lock_camera",
-    "tracker_url": "https://github.com/claromes/overlay_lock_camera/issues"
+    "doc_url": "https://github.com/claromes/space_view3d_un_lock_camera",
+    "tracker_url": "https://github.com/claromes/space_view3d_un_lock_camera/issues"
 
 }
 

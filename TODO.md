@@ -1,10 +1,11 @@
 # TODO
 
 - Use GPU Types
-- Draw icon
+- Draw icons
 - Create LICENSE file
 - Complete README file
 - Check if a camera is selected
+- Report error
 
 
 ## Tests
