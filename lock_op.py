@@ -20,7 +20,7 @@ class LOCK_OT_Camera_View_On_Op(Operator):
   def execute(self, context):
     context.space_data.lock_camera = True
 
-    return {'FINISHED'}
+    return {"FINISHED"}
 
 # UNLOCK CAMERA OP
 class LOCK_OT_Camera_View_Off_Op(Operator):
@@ -38,4 +38,4 @@ class LOCK_OT_Camera_View_Off_Op(Operator):
   def execute(self, context):
     context.space_data.lock_camera = False
 
-    return {'FINISHED'}
+    return {"FINISHED"}

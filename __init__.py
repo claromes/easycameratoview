@@ -8,14 +8,18 @@ bl_info = {
     "category" : "3D View",
     "doc_url": "https://github.com/claromes/space_view3d_un_lock_camera",
     "tracker_url": "https://github.com/claromes/space_view3d_un_lock_camera/issues"
-
 }
 
 import bpy
 from . lock_op import LOCK_OT_Camera_View_On_Op, LOCK_OT_Camera_View_Off_Op
-from . lock_pnl import LOCK_PT_Panel
+from . lock_pnl import LOCK_GT_View3D, LOCK_GT_OVERLAY
 
-classes = (LOCK_OT_Camera_View_On_Op, LOCK_OT_Camera_View_Off_Op, LOCK_PT_Panel)
+classes = (
+    LOCK_OT_Camera_View_On_Op,
+    LOCK_OT_Camera_View_Off_Op,
+    LOCK_GT_View3D,
+    LOCK_GT_OVERLAY
+)
 
 def register():
     for cls in classes:

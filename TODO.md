@@ -6,6 +6,7 @@
 - Complete README file
 - Check if a camera is selected
 - Report error
+- Only in Camera View
 
 
 ## Tests

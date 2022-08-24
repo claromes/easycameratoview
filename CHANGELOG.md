@@ -5,6 +5,7 @@
 ### Added
 - CHANGELOG
 - Doc url
+- Add bgl module and gizmo/gizmogroup type for tests (will be deleted)
 
 ### Changed
 - Category
@@ -14,5 +15,5 @@
 
 ### Added
 - Basic usage:
-  - Button lock/unlock
-  - UI basic
+  - Operators
+  - UI test panel
