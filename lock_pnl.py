@@ -5,7 +5,7 @@ class LOCK_PT_Panel(Panel):
   bl_space_type = "VIEW_3D"
   bl_region_type = "UI"
   bl_label = "Camera to View"
-  bl_category = "Camera"
+  bl_category = "3D View"
 
   def draw(self, context):
 
