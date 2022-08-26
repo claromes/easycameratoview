@@ -9,6 +9,7 @@ class LOCK_OT_Camera_View_On_Op(Operator):
   bl_idname = "space_data.lock_camera_on"
   bl_label = "Lock"
   bl_description = "Lock the Camera to View"
+  bl_options = {"REGISTER"}
 
   @classmethod
   def poll(cls, context):
@@ -27,6 +28,7 @@ class LOCK_OT_Camera_View_Off_Op(Operator):
   bl_idname = "space_data.lock_camera_off"
   bl_label = "Unlock"
   bl_description = "Unlock the Camera to View"
+  bl_options = {"REGISTER"}
 
   @classmethod
   def poll(cls, context):
@@ -39,3 +41,18 @@ class LOCK_OT_Camera_View_Off_Op(Operator):
     context.space_data.lock_camera = False
 
     return {"FINISHED"}
+
+# DIALOG OP
+class LOCK_OT_Dialog(Operator):
+  bl_idname = "wm.dialog"
+  bl_label = "C2V"
+  bl_options = {"REGISTER"}
+
+  my_bool: bpy.props.BoolProperty(name="Lock")
+
+  def execute(self, context):
+
+    return {"FINISHED"}
+
+  def invoke(self, context, event):
+    return context.window_manager.invoke_props_dialog(self, width=100)

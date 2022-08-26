@@ -11,20 +11,19 @@ bl_info = {
 }
 
 import bpy
-from . lock_op import LOCK_OT_Camera_View_On_Op, LOCK_OT_Camera_View_Off_Op
-from . lock_pnl import LOCK_GT_View3D, LOCK_GT_OVERLAY
+from . lock_op import LOCK_OT_Camera_View_On_Op, LOCK_OT_Camera_View_Off_Op, LOCK_OT_Dialog
+from . lock_pnl import LOCK_PT_Panel
 
 classes = (
     LOCK_OT_Camera_View_On_Op,
     LOCK_OT_Camera_View_Off_Op,
-    LOCK_GT_View3D,
-    LOCK_GT_OVERLAY
+    LOCK_OT_Dialog,
+    LOCK_PT_Panel
 )
 
 def register():
     for cls in classes:
         bpy.utils.register_class(cls)
-
 
 def unregister():
     for cls in classes:
