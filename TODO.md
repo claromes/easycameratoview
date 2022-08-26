@@ -6,6 +6,7 @@
 - Check if a camera is selected
 - Report error
 - Only in Camera View (?)
+- Unlock/lock from View Lock
 
 
 ## Tests
