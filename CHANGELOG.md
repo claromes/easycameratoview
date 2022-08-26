@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.0.3 - 2022-08-26
+
+### Added
+- Popup with lock/unlock icons
+- Panel + open popup button
+
+### Deleted
+- bgl module and gizmo/gizmogroup type
+
 ## 0.0.2 - 2022-08-24
 
 ### Added

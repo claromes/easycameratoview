@@ -1,12 +1,11 @@
 # TODO
 
-- Use GPU Types
-- Draw icons
+- Popup Persistence
 - Create LICENSE file
 - Complete README file
 - Check if a camera is selected
 - Report error
-- Only in Camera View
+- Only in Camera View (?)
 
 
 ## Tests

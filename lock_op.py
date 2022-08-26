@@ -1,58 +1,39 @@
 import bpy
-from bpy.types import Operator
+from bpy.types import Operator, PropertyGroup
 
-# poll_message_set
-# report
-
-# LOCK CAMERA OP
-class LOCK_OT_Camera_View_On_Op(Operator):
-  bl_idname = "space_data.lock_camera_on"
-  bl_label = "Lock"
-  bl_description = "Lock the Camera to View"
-  bl_options = {"REGISTER"}
-
-  @classmethod
-  def poll(cls, context):
-    if context.space_data.lock_camera == False:
-      return True
-    else:
-      return False
-
-  def execute(self, context):
-    context.space_data.lock_camera = True
-
-    return {"FINISHED"}
-
-# UNLOCK CAMERA OP
-class LOCK_OT_Camera_View_Off_Op(Operator):
-  bl_idname = "space_data.lock_camera_off"
-  bl_label = "Unlock"
-  bl_description = "Unlock the Camera to View"
-  bl_options = {"REGISTER"}
-
-  @classmethod
-  def poll(cls, context):
-    if context.space_data.lock_camera == False:
-      return False
-    else:
-      return True
-
-  def execute(self, context):
-    context.space_data.lock_camera = False
-
-    return {"FINISHED"}
+# DIALOG BOOL SETTINGS
+class LOCK_Dialog_Settings(PropertyGroup):
+  lock: bpy.props.BoolProperty()
 
 # DIALOG OP
 class LOCK_OT_Dialog(Operator):
   bl_idname = "wm.dialog"
-  bl_label = "C2V"
+  bl_label = "Camera to View"
+  bl_description = "Un/Lock the Camera to View"
   bl_options = {"REGISTER"}
 
-  my_bool: bpy.props.BoolProperty(name="Lock")
+  lock: bpy.props.BoolProperty(name="Lock")
+
+  @classmethod
+  def poll(cls, context):
+    return True
 
   def execute(self, context):
-
     return {"FINISHED"}
 
   def invoke(self, context, event):
-    return context.window_manager.invoke_props_dialog(self, width=100)
+    return context.window_manager.invoke_popup(self, width=40)
+
+  def draw(self, context):
+    layout = self.layout
+    scene = context.scene
+    lock = scene.lock
+
+    #layout.label(text="Lock")
+
+    if (lock.lock == True):
+      layout.prop(lock, "lock", text="", icon="LOCKED")
+      context.space_data.lock_camera = True
+    else:
+      layout.prop(lock, "lock", text="", icon="UNLOCKED")
+      context.space_data.lock_camera = False
