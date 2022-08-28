@@ -11,23 +11,23 @@ bl_info = {
 }
 
 import bpy
-from . lock_op import LOCK_Popup_Settings, LOCK_OT_Popup
-from . lock_pnl import LOCK_PT_Panel
+from . float_op import FLOAT_Popup_Settings, FLOAT_OT_Popup
+from . float_pnl import FLOAT_PT_Panel
 
 classes = (
-    LOCK_Popup_Settings,
-    LOCK_OT_Popup,
-    LOCK_PT_Panel
+    FLOAT_Popup_Settings,
+    FLOAT_OT_Popup,
+    FLOAT_PT_Panel
 )
 
 def register():
     for cls in classes:
         bpy.utils.register_class(cls)
 
-    bpy.types.Scene.lock_set = bpy.props.PointerProperty(type=LOCK_Popup_Settings)
+    bpy.types.Scene.float_set = bpy.props.PointerProperty(type=FLOAT_Popup_Settings)
 
 def unregister():
     for cls in classes:
         bpy.utils.unregister_class(cls)
 
-    del bpy.types.Scene.lock_set
+    del bpy.types.Scene.float_set

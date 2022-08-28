@@ -1,7 +1,7 @@
 import bpy
 from bpy.types import Panel
 
-class LOCK_PT_Panel(Panel):
+class FLOAT_PT_Panel(Panel):
   bl_space_type = "VIEW_3D"
   bl_region_type = "UI"
   bl_label = "Camera to View"
@@ -12,4 +12,4 @@ class LOCK_PT_Panel(Panel):
 
     row = layout.row()
     col = row.column()
-    col.operator("wm.popup", text="Open")
+    col.operator("wm.popup", text="Floating")
