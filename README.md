@@ -1,3 +1,3 @@
 # Floating Camera to View Blender Add-on [WIP]
 
-Blender add-on to lock or unlock the Camera to View easily
+Blender Add-on to create a floating Camera to View popup and easily lock or unlock the view.
