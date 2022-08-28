@@ -1,13 +1,13 @@
 import bpy
 from bpy.types import Operator, PropertyGroup
 
-# DIALOG BOOL SETTINGS
-class LOCK_Dialog_Settings(PropertyGroup):
-  lock: bpy.props.BoolProperty()
+# POPUP BOOL SETTINGS
+class LOCK_Popup_Settings(PropertyGroup):
+  lock_set: bpy.props.BoolProperty()
 
-# DIALOG OP
-class LOCK_OT_Dialog(Operator):
-  bl_idname = "wm.dialog"
+# POPUP OP
+class LOCK_OT_Popup(Operator):
+  bl_idname = "wm.popup"
   bl_label = "Camera to View"
   bl_description = "Un/Lock the Camera to View"
   bl_options = {"REGISTER"}
@@ -32,8 +32,8 @@ class LOCK_OT_Dialog(Operator):
     #layout.label(text="Lock")
 
     if (lock.lock == True):
-      layout.prop(lock, "lock", text="", icon="LOCKED")
+      layout.prop(lock_set, "lock", text="", icon="LOCKED")
       context.space_data.lock_camera = True
     else:
-      layout.prop(lock, "lock", text="", icon="UNLOCKED")
+      layout.prop(lock_set, "lock", text="", icon="UNLOCKED")
       context.space_data.lock_camera = False

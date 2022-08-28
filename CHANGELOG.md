@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.1.0 - 2022-08-28
+
+### Added
+- Persistent floating window/popup
+
+### Changed
+- Name
+- Description
+- Tracker/Doc urls
+
 ## 0.0.3 - 2022-08-26
 
 ### Added

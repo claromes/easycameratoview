@@ -12,4 +12,4 @@ class LOCK_PT_Panel(Panel):
 
     row = layout.row()
     col = row.column()
-    col.operator("wm.dialog", text="Open")
+    col.operator("wm.popup", text="Open")
