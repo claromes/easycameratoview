@@ -1,9 +1,9 @@
 # Changelog
 
-## 0.1.0 - 2022-08-28
+## 0.0.4 - 2022-08-28
 
 ### Added
-- Persistent floating window/popup
+- Persistent floating button
 
 ### Changed
 - Name

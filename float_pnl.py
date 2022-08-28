@@ -12,4 +12,4 @@ class FLOAT_PT_Panel(Panel):
 
     row = layout.row()
     col = row.column()
-    col.operator("wm.popup", text="Floating")
+    col.operator("wm.btn", text="Floating")
