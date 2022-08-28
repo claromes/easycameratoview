@@ -6,8 +6,8 @@ bl_info = {
     "version" : (0, 0, 3),
     "location" : "View3D",
     "category" : "3D View",
-    "doc_url": "https://github.com/claromes/space_view3d_un_lock_camera",
-    "tracker_url": "https://github.com/claromes/space_view3d_un_lock_camera/issues"
+    "doc_url": "https://github.com/claromes/floating_un_lock_camera",
+    "tracker_url": "https://github.com/claromes/floating_un_lock_camera/issues"
 }
 
 import bpy
