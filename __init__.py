@@ -3,7 +3,7 @@ bl_info = {
     "author" : "Claromes",
     "description" : "Fast access to Camera to View",
     "blender" : (3, 2, 2),
-    "version" : (0, 0, 4),
+    "version" : (0, 0, 5),
     "location" : "View3D",
     "category" : "3D View",
     "doc_url": "https://github.com/claromes/floating_camera_to_view",

@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.0.5 - 2022-08-30
+
+### Added
+- Close floating button
+
+### Changed
+- Icons
+
 ## 0.0.4 - 2022-08-28
 
 ### Added
