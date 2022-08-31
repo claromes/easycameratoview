@@ -1,5 +1,6 @@
 import bpy
 from bpy.types import Panel
+from . float_op import FLOAT_OT_Btn, FLOAT_OT_Close_Btn
 
 class FLOAT_PT_Panel(Panel):
   bl_space_type = "VIEW_3D"
@@ -12,4 +13,7 @@ class FLOAT_PT_Panel(Panel):
 
     row = layout.row()
     col = row.column()
-    col.operator("wm.btn", text="Floating")
+    col.operator(FLOAT_OT_Btn.bl_idname, text="Floating", icon="WINDOW")
+
+    col = row.column()
+    col.operator(FLOAT_OT_Close_Btn.bl_idname, text="Close", icon="PANEL_CLOSE")

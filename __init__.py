@@ -11,12 +11,12 @@ bl_info = {
 }
 
 import bpy
-from . float_op import FLOAT_Btn_Settings, FLOAT_OT_Btn
+from . float_op import FLOAT_OT_Btn, FLOAT_OT_Close_Btn
 from . float_pnl import FLOAT_PT_Panel
 
 classes = (
-    FLOAT_Btn_Settings,
     FLOAT_OT_Btn,
+    FLOAT_OT_Close_Btn,
     FLOAT_PT_Panel
 )
 
@@ -24,10 +24,6 @@ def register():
     for cls in classes:
         bpy.utils.register_class(cls)
 
-    bpy.types.Scene.float_set = bpy.props.PointerProperty(type=FLOAT_Btn_Settings)
-
 def unregister():
     for cls in classes:
         bpy.utils.unregister_class(cls)
-
-    del bpy.types.Scene.float_set
