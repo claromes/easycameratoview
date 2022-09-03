@@ -1,29 +1,33 @@
 bl_info = {
-    "name" : "Floating Camera to View",
+    "name" : "Easy Camera to View",
     "author" : "Claromes",
-    "description" : "Fast access to Camera to View",
+    "description" : "Easy access to lock Camera to View",
     "blender" : (3, 2, 2),
-    "version" : (0, 0, 5),
-    "location" : "View3D",
+    "version" : (0, 1, 0),
+    "location" : "Header",
     "category" : "3D View",
-    "doc_url": "https://github.com/claromes/floating_camera_to_view",
-    "tracker_url": "https://github.com/claromes/floating_camera_to_view/issues"
+    "doc_url": "https://github.com/claromes/easy_camera_to_view",
+    "tracker_url": "https://github.com/claromes/easy_camera_to_view/issues"
 }
 
 import bpy
-from . float_op import FLOAT_OT_Btn, FLOAT_OT_Close_Btn
-from . float_pnl import FLOAT_PT_Panel
+from . header_ops import LOCK_OT_Camera_View, UNLOCK_OT_Camera_View
+from . header_pnl import HEADER_MT_Panel
 
 classes = (
-    FLOAT_OT_Btn,
-    FLOAT_OT_Close_Btn,
-    FLOAT_PT_Panel
+    LOCK_OT_Camera_View,
+    UNLOCK_OT_Camera_View,
+    HEADER_MT_Panel
 )
 
 def register():
     for cls in classes:
         bpy.utils.register_class(cls)
 
+    bpy.types.VIEW3D_HT_header.append(header_pnl.HEADER_MT_Panel.draw)
+
 def unregister():
     for cls in classes:
         bpy.utils.unregister_class(cls)
+
+    bpy.types.VIEW3D_HT_header.remove(header_pnl.HEADER_MT_Panel.draw)

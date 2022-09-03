@@ -1,5 +1,19 @@
 # Changelog
 
+## 0.1.0 - 2022-09-03
+
+### Added
+- 3D View Header button
+
+### Changed
+- Name
+- Description
+- Tracker/Doc urls
+
+### Deleted
+- Floating button (gpu module)
+- Panel Open/Close buttons
+
 ## 0.0.5 - 2022-08-30
 
 ### Added
