@@ -9,7 +9,7 @@ Blender 3.2 Add-on to create a Camera to View button and easily lock or unlock t
 
 ## Download
 
-[Version 0.1.0](https://github.com/claromes/easy_camera_to_view/files/9484879/easy_camera_to_view_v0.1.0_by_claromes.zip)
+[Version 0.1.0](https://github.com/claromes/easy_camera_to_view/files/9484903/space_view3d_easy_camera_to_view_v0.1.0.zip)
 
 ## Development
 
