@@ -6,7 +6,6 @@ bl_info = {
     "version" : (0, 1, 0),
     "location" : "Header",
     "category" : "3D View",
-    "doc_url": "https://github.com/claromes/easy_camera_to_view",
     "tracker_url": "https://github.com/claromes/easy_camera_to_view/issues"
 }
 
