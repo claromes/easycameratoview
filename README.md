@@ -2,7 +2,7 @@
 
 <img src="demo-btn.gif" alt="Button" />
 
-<img src="demo-full.gif" alt="Screen" style="width: 500px;"/>
+<img src="demo-full.gif" alt="Screen" style="width: 650px;"/>
 
 Blender 3.2 Add-on to create a Camera to View button and easily lock or unlock the view
 
