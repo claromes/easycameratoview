@@ -5,6 +5,7 @@ class LOCK_OT_Camera_View(Operator):
     bl_idname = "space_data.lock_camera"
     bl_label = "Lock"
     bl_description = "Lock Camera to View"
+    bl_options = {"REGISTER"}
 
     @classmethod
     def poll(cls, context):
@@ -22,6 +23,7 @@ class UNLOCK_OT_Camera_View(Operator):
     bl_idname = "space_data.unlock_camera"
     bl_label = "Unlock"
     bl_description = "Unlock Camera to View"
+    bl_options = {"REGISTER"}
 
     @classmethod
     def poll(cls, context):
