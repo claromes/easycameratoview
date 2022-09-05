@@ -3,7 +3,7 @@ bl_info = {
     "author" : "Claromes",
     "description" : "Easy access to lock Camera to View",
     "blender" : (3, 2, 2),
-    "version" : (0, 1, 0),
+    "version" : (0, 1, 1),
     "location" : "Header",
     "category" : "3D View",
     "tracker_url": "https://github.com/claromes/easy_camera_to_view/issues"
