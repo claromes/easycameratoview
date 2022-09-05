@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1 - 2022-09-05
+
+### Added
+- Operators register
+
 ## 0.1.0 - 2022-09-03
 
 ### Added
