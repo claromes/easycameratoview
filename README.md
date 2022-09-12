@@ -23,7 +23,3 @@ First idea using [`gpu module`](https://docs.blender.org/api/current/gpu.html) a
 ## Changelog
 
 [CHANGELOG.md](https://github.com/claromes/easy_camera_to_view/blob/main/CHANGELOG.md)
-
-## Feedbacks and Contributing Are Welcome!
-
-Send me feedbacks via issue or [tweet](https://twitter.com/claromes)
