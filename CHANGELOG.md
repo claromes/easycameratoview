@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.2 - 2022-12-18
+
+### Changed
+- Updates for Blender 4.0
+
 ## 0.1.1 - 2022-09-05
 
 ### Added

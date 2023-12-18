@@ -1,25 +1,28 @@
 # Easy Camera to View
 
+Blender Add-on to create a Camera to View button and easily lock or unlock the view
+
 <img src="demo-btn.gif" alt="Button" />
 
 <img src="demo-full.gif" alt="Screen" style="width: 650px;"/>
 
-Blender 3.2 Add-on to create a Camera to View button and easily lock or unlock the view
+## Installation
 
-## Development
+- Download the [`easy_camera_to_view_v0.2.zip`](https://github.com/claromes/easy_camera_to_view/releases/tag/v0.2) file.
+- Open the Blender User Preferences and select the Add-ons tab.
+- Click "Install..." button and select the `easy_camera_to_view_v0.2.zip` file.
+- Click the checkbox to enable the add-on "Camera: Easy Camera to View".
+
+## Development Branches
 
 - `main`
 
-Realesed version
-
-- `header`
-
-Development of version with 3D View Header button (current version)
+    Released and maintaining version
 
 - `3dview`
 
-First idea using [`gpu module`](https://docs.blender.org/api/current/gpu.html) and under development. A floating 3D View button
+    A floating 3D View button. First idea, using [`gpu module`](https://docs.blender.org/api/current/gpu.html) and no longer in development, only for references.
 
 ## Changelog
 
-[CHANGELOG.md](https://github.com/claromes/easy_camera_to_view/blob/main/CHANGELOG.md)
+[CHANGELOG.md](CHANGELOG.md)

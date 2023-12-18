@@ -1,12 +1,13 @@
 bl_info = {
     "name" : "Easy Camera to View",
+    "description" : "Easy access to Camera to View",
     "author" : "Claromes",
-    "description" : "Easy access to lock Camera to View",
-    "blender" : (3, 2, 2),
-    "version" : (0, 1, 1),
+    "version" : (0, 2, 0),
+    "blender" : (4, 0, 2),
     "location" : "Header",
-    "category" : "3D View",
-    "tracker_url": "https://github.com/claromes/easy_camera_to_view/issues"
+    "doc_url": "https://github.com/claromes/easy_camera_to_view",
+    "tracker_url": "https://github.com/claromes/easy_camera_to_view/issues",
+    "category": "Camera"
 }
 
 import bpy
