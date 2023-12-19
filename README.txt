@@ -1,6 +1,6 @@
 - Easy Camera to View -
 
-Blender Add-on to create a Camera to View button and easily lock or unlock the view
+Blender Add-on to create a Camera to View button on Header region and easily lock or unlock the view
 
 -- Installation --
 
@@ -9,24 +9,27 @@ Blender Add-on to create a Camera to View button and easily lock or unlock the v
 - Click "Install..." button and select the easy_camera_to_view_v0.2.zip file.
 - Click the checkbox to enable the add-on "Camera: Easy Camera to View".
 
--- Demo Video --
+-- Screenshots --
 
-- https://github.com/claromes/easy_camera_to_view/blob/main/easy_camera_to_view_v0.2_demo.mp4
-- Click "View Raw" link
+- User Preferences: https://github.com/claromes/easy_camera_to_view/blob/main/screenshots/easy_camera_to_view_v0.2_user.jpg
+- Locked: https://github.com/claromes/easy_camera_to_view/blob/main/screenshots/easy_camera_to_view_v0.2_locked.jpg
+- Unlocked: https://github.com/claromes/easy_camera_to_view/blob/main/screenshots/easy_camera_to_view_v0.2_unlocked.jpg
+- Demo video: https://github.com/claromes/easy_camera_to_view/blob/main/screenshots/easy_camera_to_view_v0.2_demo.mp4
 
 -- Development Branches --
 
 - main
-    Released and maintaining version
+Released and maintaining version
 
 - 3dview
-    A floating 3D View button. First idea, using gpu module and no longer in development, only for references.
+A floating 3D View button. First idea, using gpu module and no longer in development, only for references.
 
 -- Changelog --
 
 - v0.2 - 2022-12-19
     - Review for Blender 4.0
     - Update README
+    - Add screenshots
 
 - v0.1.1 - 2022-09-05
     - Add Operators register
