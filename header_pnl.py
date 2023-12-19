@@ -12,7 +12,8 @@ class HEADER_MT_Panel(Menu):
 
         lock = context.space_data.lock_camera
 
-        if lock is not False:
+        if lock is True:
             row.operator(UNLOCK_OT_Camera_View.bl_idname, text='Camera to View', icon='LOCKED', depress=True)
-        else:
+            
+        if lock is False:
             row.operator(LOCK_OT_Camera_View.bl_idname, text='Camera to View', icon='UNLOCKED', depress=False)

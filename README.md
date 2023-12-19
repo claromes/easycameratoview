@@ -2,9 +2,7 @@
 
 Blender Add-on to create a Camera to View button and easily lock or unlock the view
 
-<img src="demo-btn.gif" alt="Button" />
-
-<img src="demo-full.gif" alt="Screen" style="width: 650px;"/>
+[![Demo](https://github.com/claromes/easy_camera_to_view/assets/28742647/ac96724f-a31a-43c5-8e2c-9d82a9714793)](https://github.com/claromes/easy_camera_to_view/assets/28742647/ac96724f-a31a-43c5-8e2c-9d82a9714793)
 
 ## Installation
 
