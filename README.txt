@@ -4,9 +4,9 @@ Blender Add-on to create a Camera to View button on Header region and easily loc
 
 -- Installation --
 
-- Download the easy_camera_to_view_v0.2.zip file at https://github.com/claromes/easy_camera_to_view/releases/tag/v0.2.
+- Download the easy_camera_to_view_v02.zip file at https://github.com/claromes/easy_camera_to_view/releases/tag/v0.2.
 - Open the Blender User Preferences and select the Add-ons tab.
-- Click "Install..." button and select the easy_camera_to_view_v0.2.zip file.
+- Click "Install..." button and select the easy_camera_to_view_v02.zip file.
 - Click the checkbox to enable the add-on "Camera: Easy Camera to View".
 
 -- Screenshots --
