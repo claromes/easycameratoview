@@ -14,7 +14,7 @@ Blender Add-on to create a Camera to View button on Header region and easily loc
 - User Preferences: https://github.com/claromes/easy_camera_to_view/blob/main/screenshots/easy_camera_to_view_v0.2_user.jpg
 - Locked: https://github.com/claromes/easy_camera_to_view/blob/main/screenshots/easy_camera_to_view_v0.2_locked.jpg
 - Unlocked: https://github.com/claromes/easy_camera_to_view/blob/main/screenshots/easy_camera_to_view_v0.2_unlocked.jpg
-- Demo video: https://github.com/claromes/easy_camera_to_view/blob/main/screenshots/easy_camera_to_view_v0.2_demo.mp4
+- Demo video: https://youtu.be/KJu9pcw0YmQ
 
 -- Development Branches --
 
