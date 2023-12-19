@@ -9,10 +9,10 @@ class LOCK_OT_Camera_View(Operator):
 
     @classmethod
     def poll(cls, context):
-        if context.space_data.lock_camera == False:
-            return True
-        else:
+        if context.space_data.lock_camera is True:
             return False
+        
+        return True
 
     def execute(self, context):
         context.space_data.lock_camera = True
@@ -27,10 +27,10 @@ class UNLOCK_OT_Camera_View(Operator):
 
     @classmethod
     def poll(cls, context):
-        if context.space_data.lock_camera == False:
-            return False
-        else:
+        if context.space_data.lock_camera is True:
             return True
+        
+        return False
 
     def execute(self, context):
         context.space_data.lock_camera = False
