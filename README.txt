@@ -58,7 +58,7 @@ A floating 3D View button. First idea, using gpu module and no longer in develop
     - Change Category and Tracker url
 
 - v0.0.1 - 2022-08-23
-    - Add Basic usage:
+    - Basic usage:
         - Operators
         - UI test panel
 
